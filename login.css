@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Protest+Riot&family=Roboto+Slab:wght@100..900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Slab";
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('img/bg-image.jpg') no-repeat; /*change the image that you want */
+    background-size: cover;
+    background-position: center;
+}
+
+.main{
+    width: 420px;
+    background-color: transparent;
+    border: 3px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.main h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+.main .textbox{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.textbox input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 50px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.textbox input::placeholder{
+    color: #fff;
+}
+
+.textbox i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 25px;
+}
+
+
+.main .forgot-pass{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.forgot-pass label{
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.forgot-pass a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.forgot-pass a:hover{
+    text-decoration: underline;
+    color: rgb(105, 105, 243);
+}
+
+.main .btn{
+    width: 100%;
+    height: 45px;   
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+}
+
+.main .btn::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #0ce4f3;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+}
+
+.main .btn:hover{
+    color: rgb(0, 0, 0);
+}
+
+.main .btn:hover::before {
+    width: 100%;
+}
+
+.main .register{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register p a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.register a:hover{
+   color: rgb(20, 20, 244);
+}
+
+.register p a:hover{
+    text-decoration: underline;
+}
